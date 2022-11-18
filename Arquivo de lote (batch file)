@@ -1,0 +1,13 @@
+// Criação de um arquivo em lote (.bat) para automação da função de abrir e finalizar a calculadora (Windows)
+
+
+
+REM - carregar o aplicativo calculadora
+start calc.exe
+
+echo Aplicativo calculadora foi carregado
+echo Pressione uma tecla para fechar o aplicativo Calculadora 
+pause
+
+REM - finalizar o aplicativo calculadora
+taskkill /im calculator.exe /f
